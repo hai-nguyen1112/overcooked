@@ -3,6 +3,12 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users, only: [:index, :show, :create, :update]
+      resources :recipes, only: [:index]
+      resources :ingredients, only: [:index]
+      resources :tools, only: [:index]
+      resources :levels, only: [:index]
+      post '/login', to: 'auth#create'
+      get '/profile', to: 'users#profile'
     end
   end
 
