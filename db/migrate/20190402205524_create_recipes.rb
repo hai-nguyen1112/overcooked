@@ -3,6 +3,7 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
     create_table :recipes do |t|
       t.string :name
       t.string :image
+      t.string :instruction
       t.integer :cooktime
       t.integer :level_id
 

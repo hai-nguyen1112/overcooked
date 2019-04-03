@@ -26,6 +26,11 @@ ActiveRecord::Schema.define(version: 2019_04_02_224508) do
     t.string "name"
     t.integer "qualified_points"
     t.integer "clock"
+    t.string "clean_plate"
+    t.string "dirty_plate"
+    t.string "broken_plate"
+    t.string "trash_can"
+    t.string "logo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -47,6 +52,7 @@ ActiveRecord::Schema.define(version: 2019_04_02_224508) do
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.string "image"
+    t.string "instruction"
     t.integer "cooktime"
     t.integer "level_id"
     t.datetime "created_at", null: false
