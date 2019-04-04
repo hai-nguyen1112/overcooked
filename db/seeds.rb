@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Seed data for users
-hai = User.create(username: 'hai', password: "123456", bio: "I know what you cooked last summer.", avatar: "https://i.ibb.co/bbsVxNk/hai-1.png", wins: 10, losses: 2, games_played: 12, highest_score: 160)
+hai = User.create(username: 'hai', password: "123456", bio: "I know what you cooked last summer.", avatar: "https://i.ibb.co/1TdN4MS/hai-small.png", wins: 10, losses: 2, games_played: 12, highest_score: 160)
 # End of seed data for users
 
 # Seed data for level 1
