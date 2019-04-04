@@ -26,9 +26,6 @@ ActiveRecord::Schema.define(version: 2019_04_02_224508) do
     t.string "name"
     t.integer "qualified_points"
     t.integer "clock"
-    t.string "clean_plate"
-    t.string "dirty_plate"
-    t.string "broken_plate"
     t.string "trash_can"
     t.string "logo"
     t.datetime "created_at", null: false
