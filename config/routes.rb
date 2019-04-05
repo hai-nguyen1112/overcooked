@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :ingredients, only: [:index]
       resources :tools, only: [:index]
       resources :levels, only: [:index]
+      resources :plates, only: [:index]
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end
