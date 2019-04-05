@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.string "image"
+    t.string "kind"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -42,6 +43,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
   create_table "plates", force: :cascade do |t|
     t.string "name"
     t.string "image"
+    t.string "kind"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -66,6 +68,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
     t.string "instruction"
     t.integer "cooktime"
     t.integer "level_id"
+    t.string "kind"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -73,6 +76,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
   create_table "tools", force: :cascade do |t|
     t.string "name"
     t.string "image"
+    t.string "kind"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

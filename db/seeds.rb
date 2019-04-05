@@ -11,19 +11,19 @@ hai = User.create(username: 'hai', password: "123456", bio: "I know what you coo
 # End of seed data for users
 
 # Seed data for plates
-clean_plate = Plate.create(name: 'clean_plate', image: "https://i.ibb.co/wCfjbd6/clean-plate.png")
+clean_plate = Plate.create(name: 'clean_plate', image: "https://i.ibb.co/wCfjbd6/clean-plate.png", kind: 'tool')
 # End of seed data for plates
 
 # Seed data for level 1
 level1 = Level.create(name: "level1", clock: 90, qualified_points: 50, logo: "https://i.ibb.co/rZVFWQC/logo-level1.png")
 
-watermelon_recipe = Recipe.create(level: level1, name: 'watermelon', image: "https://i.ibb.co/SBFT3G3/watermelon-recipe.png", instruction: "https://i.ibb.co/QjxnRZd/instruction-watermelon.png")
-cherries_recipe = Recipe.create(level: level1, name: 'cherries', image: "https://i.ibb.co/qmXdjq1/cherries-recipe.png", instruction: "https://i.ibb.co/rxSpWjb/instruction-cherries.png")
-kiwi_recipe = Recipe.create(level: level1, name: 'kiwi', image: "https://i.ibb.co/kQzGhgF/kiwi-recipe.png", instruction: "https://i.ibb.co/Pt10ch4/instruction-kiwi.png")
+watermelon_recipe = Recipe.create(level: level1, name: 'watermelon', image: "https://i.ibb.co/SBFT3G3/watermelon-recipe.png", instruction: "https://i.ibb.co/QjxnRZd/instruction-watermelon.png", kind: 'recipe')
+cherries_recipe = Recipe.create(level: level1, name: 'cherries', image: "https://i.ibb.co/qmXdjq1/cherries-recipe.png", instruction: "https://i.ibb.co/rxSpWjb/instruction-cherries.png", kind: 'recipe')
+kiwi_recipe = Recipe.create(level: level1, name: 'kiwi', image: "https://i.ibb.co/kQzGhgF/kiwi-recipe.png", instruction: "https://i.ibb.co/Pt10ch4/instruction-kiwi.png", kind: 'recipe')
 
-watermelon = Ingredient.create(name: 'watermelon', image: "https://i.ibb.co/ZSGqz2n/watermelon-1f349.png")
-cherries = Ingredient.create(name: 'cherries', image: "https://i.ibb.co/CmGMtmh/cherries-1f352.png")
-kiwi = Ingredient.create(name: 'kiwi', image: "https://i.ibb.co/Gpbbx4t/kiwifruit-1f95d.png")
+watermelon = Ingredient.create(name: 'watermelon', image: "https://i.ibb.co/ZSGqz2n/watermelon-1f349.png", kind:'ingredient')
+cherries = Ingredient.create(name: 'cherries', image: "https://i.ibb.co/CmGMtmh/cherries-1f352.png", kind:'ingredient')
+kiwi = Ingredient.create(name: 'kiwi', image: "https://i.ibb.co/Gpbbx4t/kiwifruit-1f95d.png", kind:'ingredient')
 
 
 RecipeIngredient.create(recipe: watermelon_recipe, ingredient: watermelon)
@@ -32,7 +32,4 @@ RecipeIngredient.create(recipe: kiwi_recipe, ingredient: kiwi)
 
 LevelPlate.create(level: level1, plate: clean_plate)
 
-# RecipeTool.create(recipe: watermelon_recipe, tool: clean_plate)
-# RecipeTool.create(recipe: cherries_recipe, tool: clean_plate)
-# RecipeTool.create(recipe: kiwi_recipe, tool: clean_plate)
 # End of seed data for level 1

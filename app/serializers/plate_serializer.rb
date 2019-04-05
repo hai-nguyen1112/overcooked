@@ -1,3 +1,3 @@
 class PlateSerializer < ActiveModel::Serializer
-  attributes :id, :name, :image, :levels
+  attributes :id, :name, :image, :levels, :kind
 end

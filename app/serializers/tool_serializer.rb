@@ -1,3 +1,3 @@
 class ToolSerializer < ActiveModel::Serializer
-  attributes :id, :name, :image, :recipes
+  attributes :id, :name, :image, :recipes, :kind
 end

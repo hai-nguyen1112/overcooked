@@ -3,6 +3,7 @@ class CreateTools < ActiveRecord::Migration[5.2]
     create_table :tools do |t|
       t.string :name
       t.string :image
+      t.string :kind
 
       t.timestamps
     end
