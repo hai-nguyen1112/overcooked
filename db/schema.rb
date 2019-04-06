@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
     t.integer "clock"
     t.string "trash_can"
     t.string "logo"
+    t.string "kind"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -90,6 +91,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
     t.integer "wins"
     t.integer "losses"
     t.integer "highest_score"
+    t.string "kind"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

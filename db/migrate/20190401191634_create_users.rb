@@ -9,6 +9,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.integer :wins
       t.integer :losses
       t.integer :highest_score
+      t.string :kind
 
       t.timestamps
     end

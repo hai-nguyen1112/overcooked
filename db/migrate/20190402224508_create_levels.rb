@@ -6,6 +6,7 @@ class CreateLevels < ActiveRecord::Migration[5.2]
       t.integer :clock
       t.string :trash_can
       t.string :logo
+      t.string :kind
 
       t.timestamps
     end
