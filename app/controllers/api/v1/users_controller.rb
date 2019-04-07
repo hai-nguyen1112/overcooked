@@ -33,21 +33,13 @@ class Api::V1::UsersController < ApplicationController
 
   def update
     @user.update(user_params)
-    if @user.valid?
-      render json: {
-        user: UserSerializer.new(@user)
-      }, status: :updated
-    else
-      render json: {
-        error: 'failed to update user'
-      }, status: :not_acceptable
-    end
+    render json: @user
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :bio, :avatar, :wins, :losses, :games_played, :highest_score)
+    params.require(:user).permit(:username, :password, :bio, :avatar, :wins, :losses, :games_played, :highest_score, :kind)
   end
 
   def get_user
@@ -55,3 +47,13 @@ class Api::V1::UsersController < ApplicationController
   end
 
 end
+
+# if @user.valid?
+#   render json: {
+#     user: UserSerializer.new(@user)
+#   }, status: :updated
+# else
+#   render json: {
+#     error: 'failed to update user'
+#   }, status: :not_acceptable
+# end

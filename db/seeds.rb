@@ -15,7 +15,7 @@ clean_plate = Plate.create(name: 'clean_plate', image: "https://i.ibb.co/wCfjbd6
 # End of seed data for plates
 
 # Seed data for level 1
-level1 = Level.create(kind: "level", name: "level1", clock: 60, qualified_points: 100, logo: "https://i.ibb.co/rZVFWQC/logo-level1.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png")
+level1 = Level.create(kind: "level", name: "level1", clock: 90, qualified_points: 100, logo: "https://i.ibb.co/rZVFWQC/logo-level1.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png")
 
 watermelon_recipe = Recipe.create(level: level1, name: 'watermelon', image: "https://i.ibb.co/SBFT3G3/watermelon-recipe.png", instruction: "https://i.ibb.co/QjxnRZd/instruction-watermelon.png", kind: 'recipe')
 cherries_recipe = Recipe.create(level: level1, name: 'cherries', image: "https://i.ibb.co/qmXdjq1/cherries-recipe.png", instruction: "https://i.ibb.co/rxSpWjb/instruction-cherries.png", kind: 'recipe')
