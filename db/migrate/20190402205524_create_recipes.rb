@@ -7,6 +7,7 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
       t.integer :cooktime
       t.integer :level_id
       t.string :kind
+      t.string :image_without_plate
 
       t.timestamps
     end

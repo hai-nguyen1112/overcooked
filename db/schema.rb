@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
     t.string "trash_can"
     t.string "logo"
     t.string "kind"
+    t.string "burned_dish"
+    t.string "ruined_dish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -70,6 +72,7 @@ ActiveRecord::Schema.define(version: 2019_04_05_142526) do
     t.integer "cooktime"
     t.integer "level_id"
     t.string "kind"
+    t.string "image_without_plate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
