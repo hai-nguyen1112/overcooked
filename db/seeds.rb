@@ -7,7 +7,51 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Seed data for users
-hai = User.create(kind: 'user', username: 'hai', password: "123456", bio: "I know what you cooked last summer.", avatar: "https://i.ibb.co/1TdN4MS/hai-small.png", wins: 10, losses: 2, games_played: 12, highest_score: 160)
+hai = User.create(kind: 'user',
+                  username: 'hai',
+                  password: "123456",
+                  bio: "I know what you cooked last summer.",
+                  avatar: "https://i.ibb.co/H2K44L9/hai.png",
+                  wins: 10,
+                  losses: 2,
+                  games_played: 12,
+                  highest_score: 160)
+andrea = User.create(kind: 'user',
+                  username: 'andrea',
+                  password: "123456",
+                  bio: "I love to sleep... I mean cook.",
+                  avatar: "https://i.ibb.co/w7Z54h5/andrea.png",
+                  wins: 23,
+                  losses: 5,
+                  games_played: 28,
+                  highest_score: 150)
+ann = User.create(kind: 'user',
+                  username: 'ann',
+                  password: "123456",
+                  bio: "My best dish is JS aka Jelly Stick.",
+                  avatar: "https://i.ibb.co/n6hVFnn/ann.png",
+                  wins: 27,
+                  losses: 46,
+                  games_played: 73,
+                  highest_score: 110)
+anthony = User.create(kind: 'user',
+                  username: 'anthony',
+                  password: "123456",
+                  bio: "I don't like cooking but I like this game.",
+                  avatar: "https://i.ibb.co/PY8nfyB/anthony.png",
+                  wins: 12,
+                  losses: 33,
+                  games_played: 45,
+                  highest_score: 120)
+artem = User.create(kind: 'user',
+                  username: 'artem',
+                  password: "123456",
+                  bio: "Cooking is better than ping pong.",
+                  avatar: "https://i.ibb.co/FK7zp4Q/artem.png",
+                  wins: 19,
+                  losses: 1,
+                  games_played: 20,
+                  highest_score: 140)
 # End of seed data for users
 
 # Seed data for plates
