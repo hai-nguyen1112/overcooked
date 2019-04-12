@@ -105,16 +105,16 @@ heloise = User.create(kind: 'user',
                   wins: 78,
                   losses: 1,
                   games_played: 79,
-                  highest_score: 170)
+                  highest_score: 160)
 james = User.create(kind: 'user',
                   username: 'james',
                   password: "123456",
                   bio: "I would cook everything in the world, twice.",
                   avatar: "https://i.ibb.co/Vm2dW9v/james.png",
-                  wins: 100,
+                  wins: 10,
                   losses: 10,
-                  games_played: 110,
-                  highest_score: 180)
+                  games_played: 20,
+                  highest_score: 170)
 jonnel = User.create(kind: 'user',
                   username: 'jonnel',
                   password: "123456",
@@ -177,7 +177,7 @@ ross = User.create(kind: 'user',
                   wins: 44,
                   losses: 52,
                   games_played: 96,
-                  highest_score: 180)
+                  highest_score: 160)
 ryan = User.create(kind: 'user',
                   username: 'ryan',
                   password: "123456",
