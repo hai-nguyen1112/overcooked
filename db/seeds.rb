@@ -268,7 +268,7 @@ broken_plate = Plate.create(name: 'broken_plate', image: "https://i.ibb.co/kMMb0
 # End of seed data for plates
 
 # Seed data for level 1
-level1 = Level.create(kind: "level", name: "level1", clock: 90, qualified_points: 100, logo: "https://i.ibb.co/rZVFWQC/logo-level1.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png")
+level1 = Level.create(kind: "level", name: "level1", clock: 90, qualified_points: 100, logo: "https://i.ibb.co/jMkZSYZ/logo-level01.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png")
 
 watermelon_recipe = Recipe.create(level: level1, name: 'watermelon', image: "https://i.ibb.co/SBFT3G3/watermelon-recipe.png", instruction: "https://i.ibb.co/QjxnRZd/instruction-watermelon.png", kind: 'recipe')
 cherries_recipe = Recipe.create(level: level1, name: 'cherries', image: "https://i.ibb.co/qmXdjq1/cherries-recipe.png", instruction: "https://i.ibb.co/rxSpWjb/instruction-cherries.png", kind: 'recipe')
@@ -287,7 +287,7 @@ LevelPlate.create(level: level1, plate: clean_plate)
 # End of seed data for level 1
 
 # Seed data for level 2
-level2 = Level.create(kind: "level", name: "level2", clock: 90, qualified_points: 100, logo: "https://i.ibb.co/4TczWs1/logo-level2.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png")
+level2 = Level.create(kind: "level", name: "level2", clock: 90, qualified_points: 100, logo: "https://i.ibb.co/jf101pH/logo-level02.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png")
 
 pancakes_recipe = Recipe.create(level: level2, name: 'pancakes', image: "https://i.ibb.co/HDxksXB/pancakes-recipe.png", instruction: "https://i.ibb.co/Tcc4Ybv/instruction-pancakes.png", kind: 'recipe')
 doughnut_recipe = Recipe.create(level: level2, name: 'doughnut', image: "https://i.ibb.co/3kKskdR/doughnut-recipe.png", instruction: "https://i.ibb.co/PFPKq5z/instruction-doughnut.png", kind: 'recipe')
@@ -307,7 +307,7 @@ LevelPlate.create(level: level2, plate: broken_plate)
 # End of seed data for level 2
 
 # Seed data for level 3
-level3 = Level.create(kind: "level", name: "level3", clock: 150, qualified_points: 100, logo: "https://i.ibb.co/tXsvVkM/logo-level3.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png", burned_dish: "https://i.ibb.co/1qPCDx2/burned-dish.png", ruined_dish: "https://i.ibb.co/6DHrGV0/ruined-dish.png")
+level3 = Level.create(kind: "level", name: "level3", clock: 150, qualified_points: 100, logo: "https://i.ibb.co/pwH5gPW/logo-level03.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png", burned_dish: "https://i.ibb.co/1qPCDx2/burned-dish.png", ruined_dish: "https://i.ibb.co/6DHrGV0/ruined-dish.png")
 
 friedshrimp_recipe = Recipe.create(level: level3, name: 'friedshrimp', image: "https://i.ibb.co/5BXgDrZ/fried-shrimp-recipe.png", instruction: "https://i.ibb.co/cgCqGmY/instruction-fried-shrimp.png", kind: 'recipe', cooktime: 3, image_without_plate: "https://i.ibb.co/k3gkBZw/fried-shrimp-1f364.png")
 frenchfries_recipe = Recipe.create(level: level3, name: 'frenchfries', image: "https://i.ibb.co/VqR4NH4/french-fries-recipe.png", instruction: "https://i.ibb.co/W5qXKNZ/instruction-french-fries.png", kind: 'recipe', cooktime: 3, image_without_plate: "https://i.ibb.co/GJKr5Y1/french-fries-1f35f.png")
