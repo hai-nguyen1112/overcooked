@@ -259,6 +259,15 @@ will = User.create(kind: 'user',
                   losses: 26,
                   games_played: 52,
                   highest_score: 140)
+bot = User.create(kind: 'user',
+                  username: 'bot',
+                  password: "123456",
+                  bio: "I am underCooked! bot.",
+                  avatar: "https://i.ibb.co/YhK2jm7/bot.png",
+                  wins: 5,
+                  losses: 5,
+                  games_played: 10,
+                  highest_score: 170)
 # End of seed data for users
 
 # Seed data for plates
