@@ -262,7 +262,7 @@ will = User.create(kind: 'user',
 bot = User.create(kind: 'user',
                   username: 'bot',
                   password: "123456",
-                  bio: "I am underCooked! bot.",
+                  bio: "I am the underCooked! bot.",
                   avatar: "https://i.ibb.co/YhK2jm7/bot.png",
                   wins: 5,
                   losses: 5,
@@ -318,9 +318,9 @@ LevelPlate.create(level: level2, plate: broken_plate)
 # Seed data for level 3
 level3 = Level.create(kind: "level", name: "level3", clock: 150, qualified_points: 100, logo: "https://i.ibb.co/pwH5gPW/logo-level03.png", trash_can: "https://i.ibb.co/M7mn9HD/wastebasket-1.png", burned_dish: "https://i.ibb.co/1qPCDx2/burned-dish.png", ruined_dish: "https://i.ibb.co/6DHrGV0/ruined-dish.png")
 
-friedshrimp_recipe = Recipe.create(level: level3, name: 'friedshrimp', image: "https://i.ibb.co/5BXgDrZ/fried-shrimp-recipe.png", instruction: "https://i.ibb.co/cgCqGmY/instruction-fried-shrimp.png", kind: 'recipe', cooktime: 3, image_without_plate: "https://i.ibb.co/k3gkBZw/fried-shrimp-1f364.png")
-frenchfries_recipe = Recipe.create(level: level3, name: 'frenchfries', image: "https://i.ibb.co/VqR4NH4/french-fries-recipe.png", instruction: "https://i.ibb.co/W5qXKNZ/instruction-french-fries.png", kind: 'recipe', cooktime: 3, image_without_plate: "https://i.ibb.co/GJKr5Y1/french-fries-1f35f.png")
-greensalad_recipe = Recipe.create(level: level3, name: 'greensalad', image: "https://i.ibb.co/55njRF8/green-salad-recipe.png", instruction: "https://i.ibb.co/vQLLTfk/instruction-green-salad.png", kind: 'recipe', cooktime: 2, image_without_plate: "https://i.ibb.co/ggP3FMG/green-salad-1f957.png")
+friedshrimp_recipe = Recipe.create(level: level3, name: 'friedshrimp', image: "https://i.ibb.co/5BXgDrZ/fried-shrimp-recipe.png", instruction: "https://i.ibb.co/pwkTkwn/new-instruction-fried-shrimp.png", kind: 'recipe', cooktime: 3, image_without_plate: "https://i.ibb.co/k3gkBZw/fried-shrimp-1f364.png")
+frenchfries_recipe = Recipe.create(level: level3, name: 'frenchfries', image: "https://i.ibb.co/VqR4NH4/french-fries-recipe.png", instruction: "https://i.ibb.co/JqsFVyg/new-instruction-french-fries.png", kind: 'recipe', cooktime: 3, image_without_plate: "https://i.ibb.co/GJKr5Y1/french-fries-1f35f.png")
+greensalad_recipe = Recipe.create(level: level3, name: 'greensalad', image: "https://i.ibb.co/55njRF8/green-salad-recipe.png", instruction: "https://i.ibb.co/PDR6q2r/new-instruction-green-salad.png", kind: 'recipe', cooktime: 3, image_without_plate: "https://i.ibb.co/ggP3FMG/green-salad-1f957.png")
 
 shrimp = Ingredient.create(name: 'shrimp', image: "https://i.ibb.co/5shP7jq/shrimp-1f990.png", kind:'ingredient')
 potato = Ingredient.create(name: 'potato', image: "https://i.ibb.co/kJLC8q8/potato-1f954.png", kind:'ingredient')
