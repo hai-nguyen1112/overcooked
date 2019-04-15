@@ -20,13 +20,13 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    if @user.valid?
+    if @user.save
       render json: {
         user: UserSerializer.new(@user)
       }, status: :created
     else
       render json: {
-        error: 'failed to create user'
+        error: @user.errors
       }, status: :not_acceptable
     end
   end
@@ -39,7 +39,7 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :bio, :avatar, :wins, :losses, :games_played, :highest_score, :kind)
+    params.require(:user).permit(:username, :password, :password_confirmation, :bio, :avatar, :wins, :losses, :games_played, :highest_score, :kind)
   end
 
   def get_user
@@ -56,4 +56,18 @@ end
 #   render json: {
 #     error: 'failed to update user'
 #   }, status: :not_acceptable
+# end
+
+# def create
+#   byebug
+#   @user = User.create(user_params)
+#   if @user.save
+#     render json: {
+#       user: UserSerializer.new(@user)
+#     }, status: :created
+#   else
+#     render json: {
+#       error: 'failed to create user'
+#     }, status: :not_acceptable
+#   end
 # end
