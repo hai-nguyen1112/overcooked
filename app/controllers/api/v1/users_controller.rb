@@ -47,27 +47,3 @@ class Api::V1::UsersController < ApplicationController
   end
 
 end
-
-# if @user.valid?
-#   render json: {
-#     user: UserSerializer.new(@user)
-#   }, status: :updated
-# else
-#   render json: {
-#     error: 'failed to update user'
-#   }, status: :not_acceptable
-# end
-
-# def create
-#   byebug
-#   @user = User.create(user_params)
-#   if @user.save
-#     render json: {
-#       user: UserSerializer.new(@user)
-#     }, status: :created
-#   else
-#     render json: {
-#       error: 'failed to create user'
-#     }, status: :not_acceptable
-#   end
-# end
