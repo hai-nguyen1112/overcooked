@@ -11,26 +11,12 @@
   - Browser: Chrome or Firefox
 
 * Game instructions
-![picture description](https://i.ibb.co/jkfgPSn/new-game-interface.png)
-
-
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  1. Game Interface
+    ![Game Interface](https://i.ibb.co/jkfgPSn/new-game-interface.png)
+  2. Game Actions
+  2.1. Serve
+    ![Action Serve](https://i.ibb.co/k4Sc53Y/new-serve-action.png)
+  2.2. Wash
+    ![Action Wash](https://i.ibb.co/qDqDh0y/new-wash-action.png)
+  2.3. Cook
+    ![Action Cook](https://i.ibb.co/S0VDMCd/new-cook-action.png)
