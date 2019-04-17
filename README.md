@@ -1,7 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Application Name: underCooked!
+
+* underCooked! is a competitive against-the-clock cooking game with a leaderboard.
+
+* Languages used: Ruby on Rails for the backend, JavaScript and React for the frontend.
+
+* To play this game:
+  - Go to: undercooked-herokuapp.com
+  - Browser: Chrome or Firefox
+
+* Game instructions
+![picture description](https://i.ibb.co/jkfgPSn/new-game-interface.png)
+
+
 
 Things you may want to cover:
 
