@@ -10,9 +10,11 @@
   - Go to: undercooked-herokuapp.com
   - Browser: Chrome or Firefox
 
+* Link to underCooked! frontend: ![underCooked! frontend](https://github.com/hai-nguyen1112/undercooked_frontend)
+
 * Game instructions
   1. Game Interface
-  
+
     ![Game Interface](https://i.ibb.co/jkfgPSn/new-game-interface.png)
 
   2. Game Actions
